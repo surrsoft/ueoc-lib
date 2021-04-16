@@ -14,22 +14,7 @@ export default function Example(props: Props) {
       <div> /example ; UeocTextElem</div>
 
       <UeocEmpty h={16}/>
-      <div className={styles.atitle}>text with border</div>
-      {
-        new UeocTextElem()
-          .text('text with border')
-          .border(new UeocBorder().th(1).color('#000000'))
-          .build()
-      }
-      <pre>{`
-        new UeocTextElem()
-          .text('111')
-          .border(new UeocBorder().th(1).color('#000000'))
-          .build()`}
-      </pre>
-
-      <UeocEmpty h={16}/>
-      <div className={styles.atitle}>Hello</div>
+      <div className={styles.atitle}>текст с рамкой</div>
       {
         new UeocTextElem()
           .text('text')
@@ -41,6 +26,48 @@ export default function Example(props: Props) {
           .text('111')
           .border(new UeocBorder().th(1).color('#000000'))
           .build()`}
+      </pre>
+
+      <UeocEmpty h={16}/>
+      <div className={styles.atitle}>плюс с paddings 8px слева и справа</div>
+      {
+        new UeocTextElem()
+          .text('text')
+          .border(new UeocBorder().th(1).color('#000000'))
+          .utPaddingL(8)
+          .utPaddingR(8)
+          .build()
+      }
+      <pre>{`
+        new UeocTextElem()
+          .text('text')
+          .border(new UeocBorder().th(1).color('#000000'))
+          .utPaddingL(8)
+          .utPaddingR(8)
+          .build()
+          `}
+      </pre>
+
+      <UeocEmpty h={16}/>
+      <div className={styles.atitle}>плюс с заливкой цветом</div>
+      {
+        new UeocTextElem()
+          .text('text')
+          .border(new UeocBorder().th(1).color('#000000'))
+          .utPaddingL(8)
+          .utPaddingR(8)
+          .bgColor('#ffff00')
+          .build()
+      }
+      <pre>{`
+        new UeocTextElem()
+          .text('text')
+          .border(new UeocBorder().th(1).color('#000000'))
+          .utPaddingL(8)
+          .utPaddingR(8)
+          .bgColor('#ffff00')
+          .build()
+          `}
       </pre>
 
 
